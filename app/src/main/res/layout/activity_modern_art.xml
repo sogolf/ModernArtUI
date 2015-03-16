@@ -5,23 +5,25 @@
 
     <LinearLayout
     android:orientation="vertical"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="1">
         <TextView
             android:text="@string/red_string"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:background="#aa0000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
         <TextView
             android:text="@string/blue_string"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:background="#0000aa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
 
 
