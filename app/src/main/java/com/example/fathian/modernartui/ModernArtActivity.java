@@ -1,5 +1,6 @@
 package com.example.fathian.modernartui;
 
+import android.app.DialogFragment;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,6 +8,8 @@ import android.view.MenuItem;
 
 
 public class ModernArtActivity extends ActionBarActivity {
+
+    private DialogFragment mDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +34,13 @@ public class ModernArtActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_more) {
+            // show Dialog box
+            mDialog = new OpenMomaDialogFragment();
+            mDialog.show(getFragmentManager(),"OpenMomaDialogFragment");
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
 }
+
