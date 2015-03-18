@@ -1,15 +1,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="2"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_weight="1"
-        android:weightSum="2">
+        android:layout_weight="2">
 
         <LinearLayout
             android:orientation="vertical"
@@ -29,7 +27,7 @@
                 android:background="@android:color/black"/>
             <TextView
                 android:id="@+id/tv_2"
-                android:background="#ffffff"
+                android:background="@android:color/white"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
@@ -92,13 +90,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_horizontal|center_vertical"
-    android:layout_weight="1"
     android:orientation="horizontal">
         <SeekBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/color_seek_bar"
-            />
+            android:id="@+id/color_seek_bar"/>
 
     </LinearLayout>
 </LinearLayout>
